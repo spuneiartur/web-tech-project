@@ -14,12 +14,6 @@ Copy the example environment variables
 cp .env.example .env
 ```
 
-Optional: Add seeds to your Mongo database
-
-```bash
-npm run seed
-```
-
 Start the local server
 
 ```bash
@@ -27,3 +21,5 @@ npm run dev
 ```
 
 ## API Documentation
+
+TODO
