@@ -1,10 +1,11 @@
 #!/usr/bin/env node
+import dotenv from "dotenv";
+import { createServer } from "http";
+import pkgPino from "pino";
+import app from "./app.js";
+const logger = pkgPino();
 
-require("dotenv").config();
-const http = require("http");
-const logger = require("pino")();
-const app = require("./app");
-
+dotenv.config();
 /**
  * Make sure to fallback to development environment.
  */
@@ -13,7 +14,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || "development";
 /**
  * Create HTTP server.
  */
-const server = http.createServer(app);
+const server = createServer(app);
 
 /**
  * Get port from environment and store in Express.

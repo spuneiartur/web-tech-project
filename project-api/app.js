@@ -1,7 +1,7 @@
-const express = require("express");
-const helmet = require("helmet");
-const router = require("./router");
-const cors = require("cors");
+import express from "express";
+import helmet from "helmet";
+import router from "./router.js"; // Make sure to include the file extension
+import cors from "cors";
 const app = express();
 
 // Configure express app
@@ -13,4 +13,4 @@ app.use(cors());
 // Route everything
 app.use(router);
 
-module.exports = app;
+export default app;
