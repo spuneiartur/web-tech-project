@@ -9,6 +9,12 @@ Make sure you have PostgreSQL installed on your machine.
 Create a new database for your project.
 Note down the connection details, including the database name, username, password, host, and port.
 
+## Copy the example environment variables
+
+```bash
+cp .env.example .env
+```
+
 ## Complete Environmental Variables:
 
 Create a .env file in the root of your project to store environment variables.
@@ -27,11 +33,6 @@ DB_PORT=your_database_port
 npm ci
 ```
 
-## Copy the example environment variables
-
-```bash
-cp .env.example .env
-```
 
 ## (Optional) Add seeds to your Postgres database
 ```bash
