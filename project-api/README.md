@@ -2,6 +2,7 @@
 
 # Getting started
 To run the project locally, you'll need to follow these steps:
+
 Initiate a PostgreSQL Database:
 
 Make sure you have PostgreSQL installed on your machine.
