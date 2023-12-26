@@ -1,6 +1,7 @@
 import { hash, genSaltSync } from "bcrypt";
 
-export default async () => [
+const getIdentitiesSeeds = async () => {
+  return [
   {
     email: "michael@email.com",
     firstName: "Michael",
@@ -22,4 +23,6 @@ export default async () => [
     role: "user",
     password: await hash("supersecretpassword", genSaltSync(8)),
   },
-];
+]};
+
+export default getIdentitiesSeeds;

@@ -1,10 +1,11 @@
-import Identity from "../entities/identity";
-import identities from "../resources/identities";
+import Identity from "../entities/identity.js";
+import getIdentitiesSeeds from "../resources/identities.js";
 
 const plantIdentities = async () => {
   try {
-    console.log("Planting identities...");
-    await identities().map(async (identity) => {
+    console.log("✅ Planting identities...");
+    const seeds = await getIdentitiesSeeds();
+    seeds.map(async (identity) => {
       await Identity.create(identity);
     });
   } catch (error) {

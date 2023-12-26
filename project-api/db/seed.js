@@ -1,12 +1,8 @@
 import dbConnection from "./db.js";
-import Identity from "./entities/identity.js";
+import plantIdentities from "./seeds/identities.js";
 
 dbConnection.sync({ force: true }).then(async () => {
-  const identity = await Identity.create({
-    firstName: "John",
-    lastName: "Doe",
-    email: "john@example.com",
-    password: "password",
-  });
-  console.log(identity.toJSON());
+  await plantIdentities();
+ 
+  console.log("✅ Seeds planted successfully!");
 });
