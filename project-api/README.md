@@ -33,7 +33,7 @@ npm ci
 cp .env.example .env
 ```
 
-## **(Optional)** Add seeds to your Postgres database
+## (Optional) Add seeds to your Postgres database
 ```bash
 npm run seed
 ```
