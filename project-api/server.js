@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 import dotenv from "dotenv";
+dotenv.config();
 import { createServer } from "http";
 import pkgPino from "pino";
 import app from "./app.js";
+
 const logger = pkgPino();
 
-dotenv.config();
 /**
  * Make sure to fallback to development environment.
  */
