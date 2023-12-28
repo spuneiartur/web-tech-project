@@ -1,6 +1,6 @@
 # Web app for taking notes during courses/labs - Backend
 
-# Getting started
+## Getting started
 
 To run the project locally, you'll need to follow these steps:
 
@@ -55,7 +55,7 @@ TODO
 
 # Web app for taking notes during courses/labs - Frontend
 
-# Getting started
+## Getting started
 
 To run the project locally, you'll need to follow these steps:
 
