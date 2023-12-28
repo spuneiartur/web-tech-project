@@ -1,4 +1,4 @@
-# Web app for taking notes during courses/labs - Backend
+# Web app for taking notes during courses/labs - Frontend
 
 # Getting started
 
