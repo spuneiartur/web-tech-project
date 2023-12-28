@@ -1,9 +1,23 @@
-# Getting Started with Create React App
+# Web app for taking notes during courses/labs - Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting started
 
-## Available Scripts
+To run the project locally, you'll need to follow these steps:
 
-In the project directory, you can run:
+## Copy the example environment variables
 
-### `npm start`
+```bash
+cp .env.example .
+```
+
+## Install dependencies
+
+```bash
+npm ci
+```
+
+## Start the local server
+
+```bash
+npm start
+```
